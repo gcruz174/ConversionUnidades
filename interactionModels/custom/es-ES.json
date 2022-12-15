@@ -1,0 +1,132 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "conversión de unidades",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "AnswerIntent",
+          "slots": [
+            {
+              "name": "numberSlot",
+              "type": "AMAZON.NUMBER"
+            },
+            {
+              "name": "unitSlotFirst",
+              "type": "Unit"
+            },
+            {
+              "name": "unitSlotSecond",
+              "type": "Unit"
+            }
+          ],
+          "samples": [
+            "{numberSlot} {unitSlotSecond}",
+            "equivale a {numberSlot} {unitSlotSecond}",
+            "Eso equivale a {numberSlot} {unitSlotSecond}",
+            "son {numberSlot} {unitSlotSecond}",
+            "Un {unitSlotFirst} son {numberSlot} {unitSlotSecond}",
+            "Un {unitSlotFirst} equivale a {numberSlot} {unitSlotSecond}"
+          ]
+        },
+        {
+          "name": "AMAZON.YesIntent",
+          "samples": [
+            "vamos",
+            "si"
+          ]
+        },
+        {
+          "name": "AMAZON.RepeatIntent",
+          "samples": [
+            "vuelve a decirlo",
+            "dime otra vez",
+            "repite",
+            "repite de nuevo",
+            "otra vez"
+          ]
+        },
+        {
+          "name": "AMAZON.NoIntent",
+          "samples": [
+            "no"
+          ]
+        },
+        {
+          "name": "AMAZON.NextIntent",
+          "samples": [
+            "siguiente",
+            "siguiente pregunta",
+            "dime la siguiente",
+            "paso palabra",
+            "otra"
+          ]
+        },
+        {
+          "name": "PendingIntent",
+          "slots": [],
+          "samples": [
+            "pregunta pendiente",
+            "pendiente",
+            "dime la pendiente",
+            "dime la pregunta pendiente",
+            "cual era la pregunta pendiente"
+          ]
+        }
+      ],
+      "types": [
+        {
+          "values": [
+            {
+              "name": {
+                "value": "julios"
+              }
+            },
+            {
+              "name": {
+                "value": "kilocalorías"
+              }
+            },
+            {
+              "name": {
+                "value": "atmósferas"
+              }
+            },
+            {
+              "name": {
+                "value": "metros"
+              }
+            },
+            {
+              "name": {
+                "value": "pascales"
+              }
+            },
+            {
+              "name": {
+                "value": "kilómetros"
+              }
+            }
+          ],
+          "name": "Unit"
+        }
+      ]
+    }
+  },
+  "version": "4"
+}

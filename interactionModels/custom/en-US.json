@@ -1,0 +1,133 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "unit conversion game",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "AnswerIntent",
+          "slots": [
+            {
+              "name": "numberSlot",
+              "type": "AMAZON.NUMBER"
+            },
+            {
+              "name": "unitSlotFirst",
+              "type": "Unit"
+            },
+            {
+              "name": "unitSlotSecond",
+              "type": "Unit"
+            }
+          ],
+          "samples": [
+            "{numberSlot} {unitSlotSecond}",
+            "it equals to {numberSlot} {unitSlotSecond}",
+            "that is {numberSlot} {unitSlotSecond}",
+            "son {numberSlot} {unitSlotSecond}",
+            "a {unitSlotFirst} is {numberSlot} {unitSlotSecond}",
+            "a {unitSlotFirst} is equal to {numberSlot} {unitSlotSecond}"
+          ]
+        },
+        {
+          "name": "AMAZON.YesIntent",
+          "samples": [
+            "Of course",
+            "Yes"
+          ]
+        },
+        {
+          "name": "AMAZON.RepeatIntent",
+          "samples": [
+            "say it again",
+            "tell me again",
+            "repeat",
+            "repeat again",
+            "once more"
+          ]
+        },
+        {
+          "name": "AMAZON.NoIntent",
+          "samples": [
+            "Negative",
+            "Nope",
+            "No"
+          ]
+        },
+        {
+          "name": "AMAZON.NextIntent",
+          "samples": [
+            "next",
+            "next question",
+            "tell me the next one",
+            "another one"
+          ]
+        },
+        {
+          "name": "PendingIntent",
+          "slots": [],
+          "samples": [
+            "pending question",
+            "pending",
+            "tell me the pending one",
+            "tell me the pending one",
+            "what was the pending question"
+          ]
+        }
+      ],
+      "types": [
+        {
+          "values": [
+            {
+              "name": {
+                "value": "joules"
+              }
+            },
+            {
+              "name": {
+                "value": "kilocalories"
+              }
+            },
+            {
+              "name": {
+                "value": "atmospheres"
+              }
+            },
+            {
+              "name": {
+                "value": "meters"
+              }
+            },
+            {
+              "name": {
+                "value": "pascals"
+              }
+            },
+            {
+              "name": {
+                "value": "kilometers"
+              }
+            }
+          ],
+          "name": "Unit"
+        }
+      ]
+    }
+  },
+  "version": "2"
+}
